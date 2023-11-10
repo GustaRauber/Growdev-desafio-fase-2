@@ -56,6 +56,7 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Minhas listas"),
+        key: Key("tittle"),
         centerTitle: true,
         actions: [
           IconButton(
@@ -87,6 +88,7 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
               },
             ),
       floatingActionButton: FloatingActionButton(
+        key: Key("btnAdd"),
         onPressed: addNewList,
         backgroundColor: Colors.blue,
         child: const Icon(Icons.add),

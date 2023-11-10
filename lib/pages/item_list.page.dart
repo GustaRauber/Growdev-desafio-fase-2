@@ -44,6 +44,7 @@ class _ItemListPageState extends State<ItemListPage> {
       isScrollControlled: true,
       builder: (ctx) => const AddItemList(),
     );
+
     if (newItem != null) {
       setState(() {
         items.add(newItem);
@@ -65,6 +66,7 @@ class _ItemListPageState extends State<ItemListPage> {
             },
             child: const Text(
               "Atualizar",
+              key: Key("atualizar"),
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
@@ -81,6 +83,7 @@ class _ItemListPageState extends State<ItemListPage> {
               alignment: Alignment.centerLeft,
               child: Text(
                 widget.shoppingList.name,
+                key: Key("inputitem"),
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
@@ -111,6 +114,7 @@ class _ItemListPageState extends State<ItemListPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
+        key: Key("BtnAdicionar"),
         backgroundColor: Colors.blue,
         onPressed: addNewItem,
         label: const Text("Adicionar"),

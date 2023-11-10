@@ -30,6 +30,7 @@ class _AddShoppingListPageState extends State<AddShoppingListPage> {
             Expanded(
               child: Center(
                 child: TextField(
+                  key: Key("input"),
                   controller: nameController,
                   decoration: const InputDecoration(
                     filled: true,
@@ -82,6 +83,7 @@ class _AddShoppingListPageState extends State<AddShoppingListPage> {
       },
       child: const Text(
         "Voltar",
+        key: Key("BtnVoltar"),
         style: TextStyle(
           color: Colors.white,
         ),
@@ -105,6 +107,7 @@ class _AddShoppingListPageState extends State<AddShoppingListPage> {
       },
       child: const Text(
         "Criar",
+        key: Key("BtnCriar"),
         style: TextStyle(
           color: Colors.blue,
         ),

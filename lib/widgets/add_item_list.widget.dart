@@ -117,6 +117,7 @@ class _AddItemListState extends State<AddItemList> {
                   ),
                   child: const Text(
                     "Adicionar",
+                    key: Key("BtnAdicionar"),
                     style: TextStyle(
                       color: Colors.blue,
                     ),
